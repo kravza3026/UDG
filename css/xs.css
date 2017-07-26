@@ -1,0 +1,667 @@
+@font-face {
+    font-family: New Roman;
+    /* Имя шрифта */
+    
+    src: url(../fonts/Times New Roman.ttf);
+    /* Путь к файлу со шрифтом */
+}
+@media (max-width:780px){
+    
+    .wrapper {
+        width: 400px;
+        margin: auto;
+        min-width: 400px;
+        margin-top: 5px;
+        height: auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+     section {
+        min-width: 400px;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 100px!important;
+    }
+/*-----------------------  Стилізация хедера ---------  */
+    
+    .header {
+        position: relative;
+        z-index: 1;
+        width: 400px;
+        margin: auto;
+        height: 800px;
+        background-image: url(../image/header/bg.jpg);
+        background-size: cover;
+        
+    }
+    
+    .lng {
+        padding: 2px;
+        border: 1px solid #8dc63f;
+    }
+    
+    .search {
+        top: 5%;
+        position: relative;
+    }
+    
+    .logo {
+        position: absolute;
+        z-index: 4;
+        margin-top: 12px;
+        display: inline-flex;
+    }
+    .logo>img{
+        width: 30%;
+        height: 30%;
+    }
+    hr{
+    position: absolute;
+        z-index: 3;
+        top: 9%;
+        left: 2%;
+        right: 2%;
+        width: 90%;
+        margin: auto;
+        background-color: #454547 ;
+        opacity: 0.4;
+        
+    }
+    .with {
+        color: #8dc63f;
+    }
+    
+    .headerTitle {
+        height: 350px;
+        position: relative;
+        z-index: 2;
+        width: 92%;
+        top: 336px;
+        left: 5%;
+        color: white;
+        border-left: 6px solid #8dc63f;
+    }
+    
+    .headerTitle>p {
+        height: 30px;
+        padding-left: 80px;
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .headerText {
+        margin-top: 30px;
+        font-weight: 800;
+        padding-left: 50px;
+        line-height: 70px;
+        letter-spacing: 2px;
+        font-size: 65px;
+        font-family: New Roman;
+    }
+    
+    .mouse {
+        display: none;
+    }
+/* ------------------навігація по сайту----------------------------   */
+.menu{
+    display: none;
+}
+   .menu_xs {
+        position: absolute;
+        z-index: 2;
+        left: 40%;
+        top: 2%;
+        z-index: 4;
+        width: 220px;
+        display: flex;
+        justify-content: flex-end
+    }
+    
+    .menu_xs>li {
+        width: auto;
+        display: inline-flex;
+        padding:  5px 5px;
+        margin: 0 5px;
+    }
+    
+    li>a {
+        color: white;
+        font-size: 18px;
+        padding: 4px;
+    }
+    
+    li>a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .menu_xs>li:hover {
+        border-top: 1px solid #8dc63f;
+    }
+.verticalLine{
+    color: #c4b9b9;
+    font-weight: 900;
+    font-size: 20px
+}
+.verticalLine{
+    border-top:none!important;
+}
+.openMenu{
+    position: relative;
+    margin-top: 5px!important;
+    width: 15px!important;
+    height: 15px!important;
+    background-image: url(../image/content/xs_menu/UDG_01_xs.png);
+    background-size: cover;
+}
+/*----------------панель пошук--------------------------*/
+.openMenu:hover{
+    background-size: cover;
+    border-top:none!important
+}
+.bgSearch{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+}
+.textSearch{
+    width: 80%;
+    font-size: 25px;
+    color: white;
+    margin: 0 2px;
+    
+}
+ .textSearch::placeholder {
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     font-size: 17px;
+     color: white;
+     padding: 10px;
+   
+    }
+.closeSearch{
+    width: 17%;
+     
+    
+}
+    
+/* ----------------панель пошуку----------------------------   */
+    
+   
+/*-------------------- Відкрите меню-------------   */
+.menuTable{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-image: url(../image/content/xs_menu/bg.jpg);
+    background-size: cover;
+    z-index: 3;
+     
+}
+.menuTable>ul{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 20%;
+}
+.menuTable>ul>li{
+    font-size: 50px;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 5px
+}
+.menuTable>ul>li>a:hover{
+    color: #8dc63f;
+}
+.searchMenu{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 3;
+    background-color: ;
+    top: 72px;
+    background-color: rgba(255, 255, 255, 0.4);
+    
+}
+/* -------------------------- Відкрите меню------------    */
+    
+/* ---------------навігація по сайту----------------------   */
+    
+    /*----------------------------Стилізація хедера--------------*/
+    
+    .titlLeft {
+        display: none;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 13%;
+    }
+    
+    .titleRight {
+        position: absolute;
+        left: 64%;
+        top: 21%
+    }
+    
+    .titl_section, .projectTitle {
+        width: 100%;
+        font-weight: 600;
+        font-size:45px;
+        color: #454547;
+        position: relative;
+        left: 5%;
+        text-align: center;
+    }
+    
+    
+    .text1 {
+        font-size: 17px;
+        width: 100%;
+        position: relative;
+        top: 355px;
+        left: 1%;
+        color: gray;
+        line-height: 30px;
+    }
+    
+    .img>img {
+        position: relative;
+        top: -520px;
+        left: 4%;
+        box-shadow: -7px -4px 47px 1px rgba(204, 190, 204, 1);
+    }
+    .read_more{
+        position: relative;
+        top: 360px;
+        left: 2%;
+    }
+    
+    .read_more>a {
+        font-size: 15px;
+        font-weight: 600;
+        color: #76d2ca;
+    }
+    .project{
+        width: 100%;
+        display: flex;
+        display: block;
+    }
+  
+    .see_portfolio, .arrow {
+        position: relative;
+        color: #439c92;
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid #439c92;
+        left: 9%;
+        padding: 2px;
+    }
+    
+    .see_portfolio:hover {
+        text-decoration: none;
+    }
+    
+    .arrow {margin-left: 3px;
+    text-decoration: none;}
+    
+    .projectFirst>.fons {
+        filter: saturate(0.5) brightness(0.7);
+    }
+    
+    .project_content>div>a {
+        position: relative;
+        width: 107px;
+        padding: 8px;
+        top: 50px;
+        border-radius: 5px;
+        background-color: #439c92;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .project_content:hover a {
+        background-color: transparent;
+        transition: 0.1s;
+        border: 1px solid #439c92;
+        text-decoration: none;
+    }
+    
+    .project_content>div>h1 {
+        font-size: 34px
+    }
+    
+    
+    .project_content {
+        transition: 0.2s;
+        width: 360px;
+        height: 360px;
+    }
+    
+    .project_content:hover .bg {
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+    
+    .project_content>div {
+        padding: 5%;
+        width: 90%;
+    }
+    
+    .filter {
+        z-index: 1;
+        opacity: 0;
+    }
+    
+    .project_content:hover .filter {
+        display: block;
+        opacity: 0.7;
+    }
+    
+    .projectFirst:hover .more_info {
+        display: block;
+        opacity: 1;
+        transition: 1s;
+    }
+    
+    .bg {
+        position: absolute;
+        width: 360px;
+        height: 360px;
+    }
+    
+    .fons {
+        filter: saturate(50%);
+    }
+    
+    .more_info {
+        opacity: 0;
+        transition: 1s;
+    }
+    
+    .info {
+        width: 100%;
+        margin: auto;
+        top: 0;
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+    
+    .info>* {
+        transition: 2.5s;
+    }
+    .box{
+        margin-top: 15px;
+    }
+    .box>div {
+        display: inline-table;
+        margin:  2px;
+    }
+    
+    
+    .times {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        background-image: url(../image/content/nambers/bg.jpg);
+        background-size: cover;
+       
+    }
+    .data {
+        position: relative;
+        top: 20%;
+        width: 70%;
+        margin: auto;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .data>div {
+        padding: 10px 50px;
+        width: 150px;
+        margin: auto;
+        height: 200px;
+        color: white;
+         display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .development {
+        border-top: 4px solid #68a455;
+        border-bottom: 4px solid #68a455;
+    }
+    
+    .data>div>h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    .data>div>p {
+        width: 170px;
+        font-weight: 500;
+        font-size: 19px;
+        text-align: center;
+    }
+    
+    .boxNews {
+        width: 100%;
+        
+    }
+    
+    .allNews>h1 {
+        text-align: center
+    }
+    
+    .newsMenu {
+        width: 85%;
+        transition: 0.2s;
+        margin: 30px auto;
+        box-shadow: 13px 14px 47px 1px rgba(204, 190, 204, 0.75);
+    }
+    
+    .newsMenu:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    
+    .newsMenu:hover .newsTitl {
+        color: #439c92;
+        transition: 0.5s;
+    }
+    
+    .newsTitl {
+        font-size: 19px;
+        padding: 15px;
+        color: #5b5a5c;
+    }
+    
+    .newsImg {
+        width: 290px;
+        height: 190px;
+        position: relative;
+        left: 5%;
+    }
+    
+    .headerNews {
+        font-size: 45px;
+        font-weight: 500;
+        color: #5b5a5c;
+    }
+    
+    .newsText {
+        
+        color: #989494;
+        line-height: 20px;
+        font-size: 16px;
+        padding: 15px;
+    }
+    
+    .newsHead {
+        padding: 10px;
+        color: #c4b9b9;
+        transition: 0.2s;
+    }
+    
+    .newsLink {
+        color: #439c92;
+        text-decoration: underline;
+    }
+    
+    .newsRead {
+        width:100%;
+        background-color: #439c92;
+        text-align: center;
+        height: 50px;
+        border: none;
+        color: white;
+        font-weight: 700;
+        position: relative;
+        cursor: pointer;
+       
+    }
+    .checkBox{
+       display: none;
+}
+    
+   
+
+    
+    .feedback {
+        display: block;
+        justify-content: space-around
+    }
+    
+    .feedback>div {
+        width: 75%;
+        margin: auto;
+      
+    }
+    
+    .contTitle>h1,
+    .massadgeTitl>h1 {
+        font-size: 45px;
+        color: #454547;
+        text-align: justify;
+    }
+    
+    .contImg {
+        position: absolute;
+        left: 0%;
+        margin-top: -30px
+    }
+    
+    .cont {
+        width: 75%;
+        margin: auto 0;
+        position: relative;
+        left: -15%;
+        display: flex;
+        color: #5b5a5c;
+        padding: 20px 0;
+    }
+    
+    .icon {
+        padding: 0 15px 10px 10px;
+        display: table-row;
+    }
+    
+    .contMail>a {
+        color: #439c92;
+    }
+
+    
+    .massadge>div {
+        padding: 0 20px 20px 0;
+    }
+    
+    .clientData>div {
+           display: inline-table;
+        width: 100%;
+        margin: 7px 1px;
+        
+    }
+    
+    .span {
+        color: #989494;
+        padding: 5px 0;
+        font-size: 10px
+    }
+    
+    .clientData>div>input,
+    .massadgeTextaria {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #989494;
+        height: 20px;
+        font-size: 17px;
+    }
+    .massadgeTextaria{
+        width: 100%;
+    }
+    
+    
+    *[placeholder]:focus {
+        opacity: 1;
+    }
+    
+    .clientData>div>input:focus,
+    .massadgeTextaria:focus {
+        border-bottom: 2px solid #439c92
+    }
+    
+    .send {
+        border: none;
+        padding: 15px;
+        width: 100%;
+        background-color: #439c92;
+        font-weight: 600;
+        color: white;
+        border-radius: 2px;
+    }
+    
+.xsFooter>div{
+    height: 50px;
+    margin: 5px;
+}
+    
+.copy{
+    background-color: #439c92;
+    color: white;
+    text-align: center
+}
+.copy>i{
+    position: relative;
+    top: 20px
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social>a>img{
+    width: 30px;
+    height: 30px;
+    margin: 10px 15px;
+    
+}
+    .Otk{
+        background-color: #5b5a5c;
+    }
+    .Otk>img{
+        width: 50%;
+        margin: 14px 25%;
+    }
+.fool{ display: none;}
+}

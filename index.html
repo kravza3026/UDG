@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Otakoyi_test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" media="(max-width: 699px)" href="css/xs.css" />
+    <link rel="stylesheet" media=" (max-width: 1200px)" href="css/sm.css" />
+    <link rel="stylesheet" media="(min-width: 1201px)" href="css/style.css" /> </head>
+
+<body ng-app="myApp">
+    <div class="wrapper" ng-controller="myCtrl">
+        <section class="header">
+            <div class="logo"> <img src="image/header/logo_top.png" alt="logotype">
+                <br> <img src="image/header/logo_botton.png" alt="#"> </div>
+            <div class="top">
+                <ul class="menu_xs">
+                    <li class="lng"><a href="#">En</a></li>
+                    <li class="verticalLine">|</li>
+                    <li class="search" ng-click="search()"><img src="image/header/search.png" alt="#"></li>
+                    <li class="verticalLine">|</li>
+                    <li class="openMenu" id="menu" ng-click="showMenu()">
+                </ul>
+                <div class="searchMenu" ng-show="searchNow">
+                    <input class='bgSearch textSearch' placeholder="What you are looking for?" type="text">
+                    <button class='bgSearch closeSearch' ng-click="search()"><img width="20" src="image/content/xs_menu/X.png" alt="clear"></button>
+                </div>
+                <div class="menuTable" ng-if="checker">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#abaut">ABOUT US</a></li>
+                        <li><a href="#project">PROJECT</a></li>
+                        <li><a href="#client">CLIENT</a></li>
+                        <li><a href="#partners">PARTNERS</a></li>
+                        <li><a href="#news">NEWS</a></li>
+                        <li><a href="#contact">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#abaut">About us</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#client">Clients</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li class="lng"><a href="#">en</a></li>
+                    <li class="search" ng-click="search()"><img src="image/header/search.png" alt="search"></li>
+                </ul>
+            </div>
+            <hr>
+            <article class="headerTitle">
+                <p>&#8592; <i class="with">1 </i>of <i class="to">4</i> &#8594;</p>
+                <h1 class="headerText">HOSTEL FOR<br> STUDENTS OF KPI</h1> </article>
+            <div class="mouse"> <img src="image/header/mouse.png" alt=""> </div>
+        </section>
+        <section id="abaut"> <img class="titlLeft first" src="image/content/title.png" alt="#">
+            <div class="content we_are">
+                <div class="text_group">
+                    <h1 class="titl_section">WHO WE ARE?</h1>
+                    <p class="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt at ipsa hic, provident incidunt quaerat fugit sit quas expedita iusto, molestiae distinctio quo perferendis quisquam, similique unde sequi itaque enim.Veniam asperiores inventore, doloribus non voluptatibus sint tenetur recusandae nihil at iure maiores commodi fugit a nobis sequi officia natus mollitia praesentium sed et adipisci, sapiente aut? Architecto ipsum, in. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eaque, iste, optio commodi officia quis harum, quo sapiente eos aut praesentium asperiores distinctio, quos nostrum debitis repudiandae voluptates aliquam sequi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptate repellat ipsam, quibusdam ea error quae. Quibusdam qui voluptas voluptates, debitis, quisquam eveniet beatae consequatur est, delectus ipsa vero tenetur. </p>
+                    <p class="read_more"><a href="#">READ MORE &#8594;</a></p>
+                </div>
+                <div class=" img"> <img src="image/content/Layer%201.jpg" alt="#" width="360" height="360"></div> <img class="titleRight" src="image/content/title2.png" alt="" width="60" height="60"> </div>
+        </section>
+        <section id="project"> <img class="titlLeft" src="image/content/title.png" alt="">
+            <div class="content project">
+                <div>
+                    <h1 class="projectTitle">OUR  PROJECTS</h1>
+                    <br><a class="see_portfolio" href="#">SEE PORTFOLIO</a><i class="arrow">&#8594;</i> </div>
+                <div class="box ">
+                    <div class="project_content projectFirst"> <img class=" bg fons" src="image/content/1/bg.jpg" alt=""> <img class="bg filter" src="image/content/filter.png" alt="">
+                        <div class="info">
+                            <h1>HOSTEL FOR<br>STUDENTS OF KPI</h1>
+                            <p class="more_info">Business was founded as a number of privately-held companies...</p> <a href="#">READ MORE</a> </div>
+                    </div>
+                    <div class="project_content projectTwo"> <img class=" bg fons" src="image/content/bg2.jpg" alt=""> <img class="bg filter" src="image/content/filter.png" alt="">
+                        <div class="info">
+                            <h1>HOUSE CLUBS<br>&laquo;NAGORNYI&raquo;</h1> <a href="#">READ MORE</a> </div>
+                    </div>
+                    <br>
+                    <div class="project_content projectThre"> <img class=" bg fons" src="image/content/bg3.jpg" alt=""> <img class="bg filter" src="image/content/filter.png" alt="">
+                        <div class="info">
+                            <h1>HOUSE CLUBS<br>&laquo;NAGORNYI&raquo;</h1> <a href="#">READ MORE</a> </div>
+                    </div>
+                    <div class="project_content projectFore"> <img class=" bg fons" src="image/content/bg4.jpg" alt=""> <img class="bg filter" src="image/content/filter.png" alt="">
+                        <div class="info">
+                            <h1>HOSTEL FOR <br>STUDENTS OF KPI</h1> <a href="#">READ MORE</a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="client" class="times">
+            <div class="data">
+                <div class="dolars">
+                    <h1>40</h1>
+                    <p>milion dolar worth of
+                        <br>property devolpments</p>
+                </div>
+                <div class="development">
+                    <h1>7</h1>
+                    <p>ha of land under devolpment</p>
+                </div>
+                <div class="market">
+                    <h1>8</h1>
+                    <p>years in the investman market</p>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="allNews">
+            <h1 class="headerNews"><img  src="image/content/title.png" width="80" alt="#">NEWS</h1>
+            <div class="boxNews">
+                <div class="newsMenu">
+                    <p class="newsHead">30 december by <a class="newsLink" href="#">Alex Turnton</a></p> <img class="newsImg" src="image/content/layer/Laye1r.jpg" alt="">
+                    <h1 class="newsTitl">HOW WE DO OUR WORK<br>&nbsp;</h1> 
+                    <p class="newsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, id. Architecto odio quam voluptatum sed illo, ipsa aut. Eum, fugiat. Ducimus, quia corporis omnis vel impedit laudantium pariatur tempora repellat?</p>
+                    
+                        <input type="button" class="newsRead" value="READ MORE">
+                    
+                </div>
+                <div class="newsMenu">
+                    <p class="newsHead">20 april by <a class="newsLink" href="#">Administrator</a></p> <img class="newsImg" src="image/content/layer/Layer2.jpg" alt="">
+                    <h1 class="newsTitl">SO HOPEFULLY THIS GIVES YOU A TINY INSIGHT</h1>
+                    <p class="newsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, id. Architecto odio quam voluptatum sed illo, ipsa aut. Eum, fugiat. Ducimus, quia corporis omnis vel impedit laudantium pariatur tempora repellat?</p>
+                    
+                        <input type="button" class="newsRead" value="READ MORE">
+                    
+                </div>
+                <div class="newsMenu thre">
+                    <p class="newsHead">17 april by <a class="newsLink" href="#">Sophi Black</a></p> <img class="newsImg" src="image/content/layer/Layer3.jpg" alt="">
+                    <h1 class="newsTitl">SIX METRES BELOW THE OCEAN'S SURACE</h1>
+                    <p class="newsText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, id. Architecto odio quam voluptatum sed illo, ipsa aut. Eum, fugiat. Ducimus, quia corporis omnis vel impedit laudantium pariatur tempora repellat?</p>
+                    
+                        <input type="button" class="newsRead" value="READ MORE">
+                    
+                </div>
+            </div>
+            <div class="checkBox">
+                <ul>
+                    <li></li>
+                    <li class="blu"></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="feedback">
+            <div class="contacts">
+                <div class="contTitle"><img class="contImg" src="image/content/title.png" alt="#">
+                    <h1>CONTACT US</h1></div>
+                <div class="cont contLocate">
+                    <div class="icon"><img src="image/content/icons/locat.png" alt=""></div>5, Klvskiy Uzviz Street 010221 Kiev,Ukraine</div>
+                <div class="cont contPhone">
+                    <div class="icon"><img src="image/content/icons/phone.png" alt=""></div>(044)220 19 50
+                    <br>(044)220 56 72</div>
+                <div class="cont contMail">
+                    <div class="icon"><img src="image/content/icons/email.png" alt=""></div><a href="#">info@udg.com.ua</a></div>
+            </div>
+            <div class="massadge">
+                <div class="massadgeTitl"><img class="contImg" src="image/content/title.png" alt="#">
+                    <h1>WRITE US</h1></div>
+                <div class="clientData">
+                    <div class="name">
+                        <p class="span">YOU NAME</p>
+                        <input  type="text" placeholder="NAME">
+                    </div>
+                    <div class="email">
+                        <p class="span">YOU EMAIL</p>
+                        <input type="text" placeholder="EMAIL">
+                    </div>
+                </div>
+                <div class="massadgeText">
+                    <textarea class="massadgeTextaria" rows="1" name="masedg" cols="50" placeholder="NASSGE"></textarea>
+                </div>
+                <button class="send">SEND MASSAGE</button>
+            </div>
+        </section>
+        <footer class="xsFooter">
+            <div class="copy"><i>&copy;2015 Standard development,2016 </i></div>
+            <div class="social">
+                <a href="#"><img src="image/content/footer/facebokSolo.png" alt="#"></a>
+                <a href="#"><img src="image/content/footer/twitterSolo.png" alt="#"></a>
+                <a href="#"><img src="image/content/footer/vkSolo.png" alt="#"></a></div>
+            
+            <div class="Otk"><img src="image/content/footer/otakoyi.png" alt="">
+            </div>
+        </footer>
+        <footer class="fool">
+            <div class="endBox"> <i>&copy;2015 Standard development, All rigths reserved. </i>
+                <div class="social"> <img src="image/content/footer/facebook.png" alt="#"> <img src="image/content/footer/twitter.png" alt="#"> <img src="image/content/footer/vk.png" alt="#"> </div><i> <img src="image/content/footer/otakoyi.png" alt=""></i> </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+
+</html>
